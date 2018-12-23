@@ -12,8 +12,8 @@ enlarge.forEach(function(item){item.addEventListener("mouseleave", function(){
 	item.classList.remove("enlarge");})});
 
 };
-enlargeElement("a");
-enlargeElement("img");
+enlargeElement(".navElement");
+
 
 function dropDownList(){
 
