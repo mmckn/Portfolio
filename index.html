@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,22 +6,22 @@
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
 </head>
 <body>
-<nav id=navbar">
+<nav id="navbar">
 	<ul id="nav-content">
-		<a class = "navElement" href=>About</a>
-		<a class = "navElement projects" href=>Projects
-		<ul class= "find invisible">
-			<li>pj1
-			</li>
-			<li>pj2</li>
-		</ul></a>
+		<a class = "navElement" href="">About</a>
+		<a class = "navElement projects" href="#projects">Projects</a>
+		<ul class= "find invisible projects find">
+			<a class ="pjlist projects find" href="https://github.com/mmckn/Product-Landing-Page">product landing Page </a>
+			
+			<li class ="pjlist projects">pj2</li>
+		</ul></li>
 		
 		<a class = "navElement" href=>contact</a>
 	</ul>
 	<div id="colour">
 </nav>
-	<div id="intro">
-		<header class="name">I'm Michael A Web Developer</header>
+	<div id="welcome-section">
+		<h1 class="name">I'm Michael A Web Developer</h1>
 	</div>
 
 	
@@ -28,23 +29,40 @@
 		<p  class="pj">Projects</p>
 
 <div class="examples">
-<div class="pj1">	
-<p class = "pjtitle">Product Landing Page</p>
-<a href="https://www.w3schools.com/html/html_links.asp">
-<video class ="pjvid p1"src="beerkits.webm" height="80%" width="80%" muted="muted">\</video></a>
+	<div class="p1">
+	<p class = "pjtitle">Till System</p>
+	<video class ="pjvid pj1" src="till-system.webm" height="80%" width="80%" muted="muted"></video>
+		<a href="https://github.com/mmckn/Till-System"><p>Github Page</p></a>
 </div>
-	<div class="pj1">
+
+<div class="p1">	
+<p class = "pjtitle">Product Landing Page</p>
+
+<video class ="pjvid pj1 project-tile"src="beerkits.webm" height="80%" width="80%" muted="muted">\</video>
+	<a href="https://github.com/mmckn/Product-Landing-Page"><p>Github Page</p></a>
+</div>
+	<div id ="p2" class = "p1">
 	<P class = "pjtitle">Drumkit</P>
-<video class ="pjvid p1" src="drumkit.webm" height="80%" width="80%" muted="muted"></video></div>
-	<div class="pj1">
+<video class ="pjvid pj1" src="drumkit.webm" height="80%" width="80%" muted="muted"></video>
+	<a href="https://github.com/mmckn/Drumkit"><p>Github Page</p></a>
+</div>
+	<div class="p1">
 	<p class = "pjtitle">tic tac toe</p>
-	<video class ="pjvid p1" src="tictactoe.webm" height="80%" width="80%" muted="muted"></video></div>
-		<div class="pj1">
+
+	<video class ="pjvid pj1" src="tictactoe.webm" height="80%" width="80%" muted="muted"></video>
+	<a href="https://github.com/mmckn/tic-tac-toe"><p>Github Page</p></a>
+</div>
+		<div class="p1">
 	<p class = "pjtitle">todo list</p>
-	<video class ="pjvid p1" src="todolist.webm" height="80%" width="80%" muted="muted"></video></div>
-		<div class="pj1">
-	<p class = "pjtitle">CSS Documentation</p>
-	<video class ="pjvid p1" src="tributepage.webm" height="80%" width="80%" muted="muted"></video></div>
+	<video class ="pjvid pj1" src="todolist.webm" height="80%" width="80%" muted="muted"></video>
+		<a href="https://github.com/mmckn/To-do-list"><p>Github Page</p></a>
+</div>
+
+		<div class="p1">
+	<p class = "pjtitle">Tribute Page</p>
+	<video class ="pjvid pj1" src="tributepage.webm" height="80%" width="80%" muted="muted"></video>
+		<a href="https://github.com/mmckn/Tribute-Page"><p>Github Page</p></a>
+</div>
 
 </div>
 
@@ -55,14 +73,12 @@
 </div>
 </div>
 
-<div class ="projectDescriptions">
-	<h1>Features</h1>
-	<ul>
-		<li class ="pdbp">A website for a company selling All-grain Brewing kits</li>
-		<li class ="pdbp">features include an account signup and login ability using javascript</li>
-	</ul>
+
 </div>
+<div  class="github-widget" data-username="mmckn"></div>
+<script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
+<a  id="profile-link" target="_blank"  href= "https://github.com/mmckn"> Github Profile</a>
+
 <script src="portfolio.js"></script>
 </body>
 </html>
-
