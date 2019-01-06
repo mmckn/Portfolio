@@ -1,25 +1,33 @@
 *{padding:0px;
 	margin:0px;
 	 }
-	 body{background-color:#f9f9f9;}
+	 body{background-color:#eaeaea;}
 .invisible
-{opacity: 0;}
-.show{
-	opacity: 1;
+{display:none;}
+.pjlist{font-size:15px;
+color:black;
 }
-
+.pjvid{
+	
+	height:300px;
+}
+#navbar{
+	position:fixed;
+	width:100%;
+}
 
 #nav-content{display:flex;
 flex-direction:row;
 justify-content:space-around;
 list-style-type:none;
-
+background-color: #33363b;
 
 padding-top:25px;
+padding-bottom:25px;
 }
 .navElement{
 	text-decoration:none;
-	color:black;
+	color:white;
          font-size:40px;
   margin-right:5px; 
   height:46px; 
@@ -36,11 +44,7 @@ transform: scale(1.5);
 display:center;
 }
 
-}
-#intro{background-color:;
-height:;
 
-}
 .name{color:;
 	
 	font-size:40px;
@@ -55,23 +59,26 @@ text-align:center;
 
 
 }
-.pj1{
-padding:20px 20px 20px 20px;
+#welcome-section{
+	height:250px;
+}
 
-
-
-background-color:;}
 
 .examples{
 	display:grid;
 	grid-template-columns: 1fr 1fr;
+grid-column-gap:50px;
+grid-row-gap:50px;
 
 	text-align:center;
 }
 .pj{font-size:50px;
 text-align:center;
 font-weight:;
+padding-bottom:50px;
+margin-top:20px;
 }
+
 .pjtitle{
 	font-size:35px;
 	padding-bottom:50px;
@@ -79,15 +86,34 @@ font-weight:;
 .p1{
 	
 	padding:40px 40px 40px 40px;
+	margin-left:10px;
+	margin-right:10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	
 	background-color:white;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border: 1px solid grey;
+	
 	 border-radius: 25px;
 }
 .contact{background-color:;}
+.github-widget{
+	margin-left:40%;
+	background-color:white;
+	margin-bottom:10px;
+}
+#profile-link{
+	margin-left:40%;
+	background-color:white;
+	margin-bottom:10px;
+}
+
+}
 
 
 .pdbp{
 text-align:left;
 
 }
+@media only screen and (max-width: 768px) {
+.examples
+{grid-template-columns:1fr;}}
